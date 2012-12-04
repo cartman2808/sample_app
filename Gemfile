@@ -4,11 +4,10 @@ gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-group :developement, :test do
+group :development, :test do
     gem 'sqlite3'
     gem 'rspec-rails', '2.9.0'
 end
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -19,6 +18,10 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :test do
+	gem 'capybara', '1.1.2'
 end
 
 gem 'jquery-rails'
